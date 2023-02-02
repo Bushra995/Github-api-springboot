@@ -46,13 +46,11 @@ public class RestService {
 	private final String search_url = "https://github.optum.com/api/v3/search/code";
 	private static final String baseUrl = "https://github.optum.com/api/v3/orgs/";
 
-	//String token = "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";
-	// String token ="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";
 
 	@Value("${token}")//accessing value from application.properties
 	String token = "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";
-	//public static final String authorization = "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";
-//public static final String authorization="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";
+	//public static final String authorization = "github_pat_11ASLSV5Oa";
+//public static final String authorization="github_pAwwOL";
 	public static final String authorization = "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";
 	//maikng object for excel report
 	private final RestTemplate restTemplate;
@@ -92,7 +90,7 @@ public class RestService {
 			.build();
 
 
-	//private static final String authorization = "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";
+	//private static final String authorization = "github";
 	//private static final String baseUrl = "https://api.github.com/users/"+username;
 
 	private static final ObjectMapper objectMapper = new ObjectMapper();
@@ -462,7 +460,7 @@ public class RestService {
 	//serch for a file inn org
 	public Map<String, String> search(String org, String filename) {
 		HttpHeaders headers = new HttpHeaders();
-		headers.set("Authorization", "Token " + "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");
+		headers.set("Authorization", "Token " + "ghp_g5pqBMxF9TJtvtokenE4d7FDe");
 
 		HttpEntity<String> entity = new HttpEntity<>(headers);
 
@@ -509,7 +507,7 @@ public class RestService {
 		//authorization
 
 		 HttpHeaders headers = new HttpHeaders();
-		 headers.set("Authorization", "Token " + "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");
+		 headers.set("Authorization", "Token " + "ghp_gyfE4d7FDe");
 
 		 HttpEntity<String> entity = new HttpEntity<>(headers);
 
